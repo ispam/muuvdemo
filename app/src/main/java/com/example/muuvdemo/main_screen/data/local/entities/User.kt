@@ -1,4 +1,4 @@
-package com.example.muuvdemo.main_screen.data
+package com.example.muuvdemo.main_screen.data.local.entities
 
 import com.example.muuvdemo.common.delegate.ItemDelegate
 import com.example.muuvdemo.utils.USER_TYPE
