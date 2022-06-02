@@ -1,6 +1,6 @@
 # Muuv Demo
 
-![1](https://github.com/ispam/tango_app/blob/master/gif/muuvdemo.gif)
+![1](https://github.com/ispam/muuvdemo/tree/master/gif/muuvdemo.gif)
 
 **Objective:** Build a REST app to show users and its details
 
