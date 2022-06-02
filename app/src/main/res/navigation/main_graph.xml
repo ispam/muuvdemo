@@ -9,7 +9,13 @@
         android:id="@+id/usersFragment"
         tools:layout="@layout/fragment_users"
         android:name="com.example.muuvdemo.main_screen.fragments.UsersFragment"
-        android:label="UsersFragment" />
+        android:label="UsersFragment" >
+        <action
+            android:id="@+id/action_usersFragment_to_userFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/userFragment"
+            app:destination="@id/userFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/userFragment"
         tools:layout="@layout/fragment_user"

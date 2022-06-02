@@ -28,4 +28,10 @@ class UsersViewModel
             }
         }
     }
+
+    fun loadMoreUsers() {
+        viewModelScope.launch {
+            usersRepository.loadNextUsers()
+        }
+    }
 }

@@ -6,7 +6,7 @@ data class PaginatedDataState<T>(
     val hasNextPage: Boolean = true,
     val nextPageToLoad: Int = 1,
     val errorLoadingLastPage: Throwable? = null,
-    val pageSize: Int = 1
+    val pageSize: Int
 ) {
 
     fun onLoading() = copy(errorLoadingLastPage = null, loading = true)
@@ -20,6 +20,7 @@ data class PaginatedDataState<T>(
         } else {
             // We have loaded the last know page so we need to insert from its start index
             val lastFullPageIndex = pageSize * (nextPageToLoad - 1)
+            nextPageToLoad++
             items.subList(0, lastFullPageIndex).plus(page.data)
         }
         return PaginatedDataState(
