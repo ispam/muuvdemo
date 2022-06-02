@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Muuvdemo</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="splash_created_by">Created by \n Diego Urrea</string>
 </resources>
